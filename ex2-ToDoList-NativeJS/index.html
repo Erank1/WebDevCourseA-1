@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="todo.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="jumbotron text-center mb-4">
+        <h1>ToDo-List</h1>
+        <p>Here we talking about the exercise 2</p>
+        <button type="button" class="btn btn-danger" id="show-btn">Show Completed</button>
+        <button type="button" class="btn btn-danger" id="back-btn" style="display:none">Return to ongoing tasks</button>
+        <div class="row" id="textbooks">
+            <hr>
+            <form class="form-inline">
+                <div class="input-group">
+                    <input id="task-text" type="text" class="form-control" aria-label="the task" size="50" placeholder="Enter any task to add to the list" required>
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-danger" id="add-btn">Add task</button>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div id="error-msg" class="alert alert-danger" role="alert" style="display:none">
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div id="theTasks">
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+</div>
+
+</body>
+</html>
